@@ -1,0 +1,67 @@
+{
+  "calibration_runs_averaged": 2,
+  "means": {
+    "nonstream/en": {
+      "corpus_wer": 0.012093926553672318,
+      "coverage": 1088,
+      "latency_mean_s": 0.1879426477260887,
+      "latency_p95_s": 0.24359658776277981,
+      "qps": 168.91703666392016,
+      "rtf_mean": 0.04126526369952056,
+      "rtf_p95": 0.05723203694825789,
+      "rtfx": 792.6065156392763,
+      "warmup_coverage": 1088
+    },
+    "nonstream/zh": {
+      "corpus_wer": 0.006128258915193288,
+      "coverage": 2020,
+      "latency_mean_s": 0.17671096725959912,
+      "latency_p95_s": 0.22323816900607196,
+      "qps": 179.78003274144126,
+      "rtf_mean": 0.03818265662254758,
+      "rtf_p95": 0.04895560418818341,
+      "rtfx": 841.6821126200196,
+      "warmup_coverage": 2020
+    },
+    "stream/en": {
+      "corpus_wer": 0.012093926553672316,
+      "coverage": 1088,
+      "empty_delta_count": 0,
+      "inter_chunk_mean_s": 0.0481348135966177,
+      "inter_chunk_p95_s": 0.07929722511908038,
+      "last_delta_to_receipt_mean_s": 0.0018648670502086902,
+      "latency_mean_s": 0.19672775199600723,
+      "latency_p95_s": 0.2572504257996721,
+      "qps": 160.59947303870788,
+      "rtf_mean": 0.04323463840182225,
+      "rtf_p95": 0.05944567141563852,
+      "rtfx": 753.5781544165766,
+      "single_delta_fraction": 0.0,
+      "ttft_mean_s": 0.10178621776350494,
+      "ttft_p95_s": 0.1364510274220567,
+      "warmup_coverage": 1088
+    },
+    "stream/zh": {
+      "corpus_wer": 0.006098291878933173,
+      "coverage": 2020,
+      "empty_delta_count": 0,
+      "inter_chunk_mean_s": 0.046965023764776404,
+      "inter_chunk_p95_s": 0.0777054216014221,
+      "last_delta_to_receipt_mean_s": 0.0020888873746329703,
+      "latency_mean_s": 0.18422704504271847,
+      "latency_p95_s": 0.23864082346359888,
+      "qps": 172.0589065161784,
+      "rtf_mean": 0.03982113314726239,
+      "rtf_p95": 0.05163364912204426,
+      "rtfx": 805.5338611485588,
+      "single_delta_fraction": 0.0,
+      "ttft_mean_s": 0.10287572385769386,
+      "ttft_p95_s": 0.13054383572695466,
+      "warmup_coverage": 2020
+    }
+  },
+  "reference_gpu": "NVIDIA H100 80GB HBM3",
+  "schema": 1,
+  "source_commit": "eb7e97ed9438ef4e4352656aec6170aeeb90966f",
+  "task": "rsi/qwen3-asr-1.7b-dual-mode"
+}

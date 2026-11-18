@@ -1,0 +1,35 @@
+{
+  "audio_formats": {
+    "ming": {
+      "formats": [
+        [
+          1,
+          "PCM_16"
+        ]
+      ],
+      "sample_rates": [
+        44100
+      ]
+    }
+  },
+  "calibration_runs_averaged": 1,
+  "means": {
+    "ming": {
+      "audio_throughput_s_per_s": 21.881666666666664,
+      "latency_mean_s": 2.69,
+      "latency_median_s": 2.595333333333333,
+      "latency_p95_s": 3.9806666666666666,
+      "latency_p99_s": 7.8183333333333325,
+      "rtf_mean": 0.7325333333333334,
+      "rtf_median": 0.7212999999999999,
+      "rtf_p95": 0.8291666666666666,
+      "rtf_p99": 1.0989,
+      "throughput_qps": 5.913333333333334,
+      "wer_corpus": 0.012057272042200452
+    }
+  },
+  "reference_gpu": "NVIDIA H100 NVL",
+  "schema": 1,
+  "source_commit": "ca9e8789fcd84ed6f7272276cb99447eec751787",
+  "task": "rsi/ming3-tts-tiny-nonstream"
+}

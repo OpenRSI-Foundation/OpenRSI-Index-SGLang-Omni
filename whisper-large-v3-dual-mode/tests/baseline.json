@@ -1,0 +1,67 @@
+{
+  "calibration_runs_averaged": 2,
+  "means": {
+    "nonstream/en": {
+      "corpus_wer": 0.013745964487489912,
+      "coverage": 1088,
+      "latency_mean_s": 0.5977260597500229,
+      "latency_p95_s": 0.7484034869955696,
+      "qps": 53.212220936732706,
+      "rtf_mean": 0.1311271238141488,
+      "rtf_p95": 0.17886374548314465,
+      "rtfx": 249.6867921617981,
+      "warmup_coverage": 1088
+    },
+    "nonstream/zh": {
+      "corpus_wer": 0.06631205673758865,
+      "coverage": 2020,
+      "latency_mean_s": 0.6569905022478304,
+      "latency_p95_s": 0.8786091964847098,
+      "qps": 48.624578645693475,
+      "rtf_mean": 0.1417959130816422,
+      "rtf_p95": 0.18967595102397364,
+      "rtfx": 227.64729461711562,
+      "warmup_coverage": 2020
+    },
+    "stream/en": {
+      "corpus_wer": 0.01374596448748991,
+      "coverage": 1088,
+      "empty_delta_count": 0,
+      "inter_chunk_mean_s": 0.098244584736846,
+      "inter_chunk_p95_s": 0.25299625343565524,
+      "last_delta_to_receipt_mean_s": 0.0060328799380145294,
+      "latency_mean_s": 0.6066394945436888,
+      "latency_p95_s": 0.7403967443446158,
+      "qps": 52.43151069399828,
+      "rtf_mean": 0.132996162541963,
+      "rtf_p95": 0.18197073321205376,
+      "rtfx": 246.0234788723944,
+      "single_delta_fraction": 0.0,
+      "ttft_mean_s": 0.21087640861390122,
+      "ttft_p95_s": 0.29904641880420957,
+      "warmup_coverage": 1088
+    },
+    "stream/zh": {
+      "corpus_wer": 0.066317051243632,
+      "coverage": 2020,
+      "empty_delta_count": 0,
+      "inter_chunk_mean_s": 0.09229107541581882,
+      "inter_chunk_p95_s": 0.2345115188179382,
+      "last_delta_to_receipt_mean_s": 0.007343515740894242,
+      "latency_mean_s": 0.6576521451267638,
+      "latency_p95_s": 0.8921916342282202,
+      "qps": 48.57009882216482,
+      "rtf_mean": 0.14195946660951322,
+      "rtf_p95": 0.19324604612883614,
+      "rtfx": 227.39223462928757,
+      "single_delta_fraction": 0.0,
+      "ttft_mean_s": 0.20784123494061596,
+      "ttft_p95_s": 0.33979607644723725,
+      "warmup_coverage": 2020
+    }
+  },
+  "reference_gpu": "NVIDIA H100 80GB HBM3",
+  "schema": 1,
+  "source_commit": "eb7e97ed9438ef4e4352656aec6170aeeb90966f",
+  "task": "rsi/whisper-large-v3-dual-mode"
+}

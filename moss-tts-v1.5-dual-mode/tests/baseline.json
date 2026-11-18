@@ -1,0 +1,64 @@
+{
+  "audio_formats": {
+    "moss": {
+      "formats": [
+        [
+          1,
+          "PCM_16"
+        ]
+      ],
+      "sample_rates": [
+        24000
+      ]
+    },
+    "moss_stream": {
+      "formats": [
+        [
+          1,
+          "PCM_16"
+        ]
+      ],
+      "sample_rates": [
+        24000
+      ]
+    }
+  },
+  "calibration_runs_averaged": 2,
+  "means": {
+    "moss": {
+      "audio_throughput_s_per_s": 35.22666666666667,
+      "latency_mean_s": 2.025833333333333,
+      "latency_median_s": 2.0101666666666667,
+      "latency_p95_s": 2.5515,
+      "latency_p99_s": 2.892666666666666,
+      "rtf_mean": 0.4663333333333334,
+      "rtf_median": 0.45065,
+      "rtf_p95": 0.6023000000000001,
+      "rtf_p99": 0.6586833333333333,
+      "throughput_qps": 7.862166666666666,
+      "wer_corpus": 0.0176253872561333
+    },
+    "moss_stream": {
+      "audio_throughput_s_per_s": 29.3915,
+      "audio_ttfp_mean_s": 1.0650166666666667,
+      "audio_ttfp_median_s": 1.0628,
+      "audio_ttfp_p95_s": 1.2895333333333334,
+      "audio_ttfp_p99_s": 1.3815666666666666,
+      "c50": 90.97833333333334,
+      "latency_mean_s": 2.4290000000000003,
+      "latency_median_s": 2.4111666666666665,
+      "latency_p95_s": 3.0544999999999995,
+      "latency_p99_s": 3.407,
+      "rtf_mean": 0.5588833333333334,
+      "rtf_median": 0.5408999999999999,
+      "rtf_p95": 0.7156333333333333,
+      "rtf_p99": 0.7814166666666666,
+      "throughput_qps": 6.56,
+      "wer_corpus": 0.017974266655502526
+    }
+  },
+  "reference_gpu": "NVIDIA H100 80GB HBM3",
+  "schema": 1,
+  "source_commit": "cb75ab409669a6ab672fa42421b41b11af2fe263",
+  "task": "rsi/moss-tts-v1.5-dual-mode"
+}

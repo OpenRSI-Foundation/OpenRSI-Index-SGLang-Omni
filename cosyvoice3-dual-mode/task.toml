@@ -1,0 +1,45 @@
+schema_version = "1.4"
+
+[task]
+name = "rsi/cosyvoice3-dual-mode"
+version = "1.0.0"
+description = "Improve Fun-CosyVoice3-0.5B-2512 serving throughput in both streaming and non-streaming modes on SGLang-Omni under strict latency and WER<=2% guards."
+
+[metadata]
+author_name = "Chenyang Zhao; Zhuofeng Li"
+author_email = "contributor-14@example.invalid; contributor-15@example.invalid"
+difficulty_explanation = "Multi-stage TTS serving requires causal profiling and systems optimization across scheduler batching, CUDA graphs, inter-stage IPC, reference conditioning, and audio decoding without regressing tail latency, streaming continuity, or speech intelligibility."
+verification_explanation = "Six fresh-process SeedTTS English c16 benchmark runs (3 non-streaming + 3 streaming) with independent original-source Qwen3-ASR-1.7B verification, strict throughput improvement over reference B0 in both modes, 3% latency/RTF/TTFA/C50 guards, and corpus WER <= 0.02."
+category = "ML"
+subcategory = "Inference"
+tags = ["autoresearch", "tts", "cosyvoice3", "streaming", "sglang-omni", "throughput"]
+expert_time_estimate_hours = 24
+relevant_experience = "SGLang-Omni serving runtime and GPU inference optimization."
+
+[metadata.rsi_harness.verifier]
+gpus = 1
+
+[environment]
+os = "linux"
+cpus = 16
+memory_mb = 131072
+storage_mb = 204800
+build_timeout_sec = 14400
+workdir = "/workspace"
+gpus = 1
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 86400
+network_mode = "no-network"
+
+[verifier]
+timeout_sec = 14400
+network_mode = "no-network"
+environment_mode = "shared"
+
+[verifier.env]
+RSI_BASELINE_JSON = "${RSI_BASELINE_JSON:-}"
+RSI_TTS_BASELINE_JSON = "${RSI_TTS_BASELINE_JSON:-}"
+RSI_TTS_CPU_LANES = "${RSI_TTS_CPU_LANES:-}"
+RSI_TTS_NUMA_LANES = "${RSI_TTS_NUMA_LANES:-}"
